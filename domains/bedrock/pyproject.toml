@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "bedrock"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+injector = "^0.21.0"
+uvicorn = {extras = ["standard"], version = "^0.25.0"}
+fastapi = "^0.108.0"
+forge = "^0.22.0"
+nest-asyncio = "^1.5.8"
+requests = "^2.31.0"
+grequests = "^0.7.0"
+aiohttp = {extras = ["speedups"], version = "^3.9.1"}
+
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+mypy = "^1.8.0"
+pytest-asyncio = "^0.23.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+[virtualenvs]
+in-project = true
